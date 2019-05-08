@@ -7,7 +7,7 @@ const sinon = require('sinon');
 //the library we're testing
 const {ArrayMapper} = require('../../');
 
-describe('Arrays > Mapper', function(){
+describe('ArrayMapper', function(){
 	
 	it('Should provide ArrayMapper',() => {
 		assert( util.isFunction( ArrayMapper ), 'Expected ArrayMapper function' )
