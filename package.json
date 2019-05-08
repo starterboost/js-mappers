@@ -1,0 +1,38 @@
+{
+  "name": "@starterboost/react-utilities",
+  "version": "1.0.11",
+  "main": "index.js",
+  "author": "Jimib",
+  "license": "MIT",
+  "scripts": {
+    "release": "project-release",
+    "test:array": "mocha tests/array/**/*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@starterboost/project-scripts": "starterboost/project-scripts#1.0.5",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2"
+  },
+  "dependencies": {
+    "@babel/register": "^7.4.4"
+  },
+  "mocha": {
+    "diff": true,
+    "extension": [
+      "js"
+    ],
+    "package": "./package.json",
+    "reporter": "spec",
+    "slow": 75,
+    "timeout": 2000,
+    "watch": true,
+    "ui": "bdd",
+    "require": [
+      "@babel/polyfill",
+      "@babel/register"
+    ]
+  }
+}
