@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "release": "project-release",
-    "example:array:basic": "babel-node examples/array/basic.js",
-    "test:array": "mocha tests/array/**/*",
-    "test:object": "mocha tests/object/**/*"
+    "example:array:basic": "NODE_ENV=test babel-node examples/array/basic.js",
+    "test:array": "NODE_ENV=test mocha tests/array/**/*",
+    "test:object": "NODE_ENV=test mocha tests/object/**/*"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
