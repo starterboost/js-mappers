@@ -1,6 +1,6 @@
 //required modules
 const util = require('util');
-const _ = require('lodash');
+const _ = require('lodash-es');
 const assert = require('assert');
 const sinon = require('sinon');
 
